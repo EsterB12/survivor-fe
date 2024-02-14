@@ -113,7 +113,7 @@ export const NetworkProvider = ({ children }: ProviderProps) => {
       networkNotificationId: networkNotificationId.current,
       setNetworkNotificationId,
     }),
-    [status, switchNetwork],
+    [status, switchNetwork]
   );
 
   return (
