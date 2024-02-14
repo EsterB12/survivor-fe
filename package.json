@@ -17,6 +17,8 @@
     "postbuild": "next-sitemap --config next-sitemap.config.js"
   },
   "dependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
     "@usedapp/core": "^1.2.13",
     "clsx": "^2.1.0",
     "ethers": "^5.7.2",

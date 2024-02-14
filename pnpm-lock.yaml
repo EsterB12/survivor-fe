@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@ethersproject/abi':
+    specifier: ^5.7.0
+    version: 5.7.0
+  '@ethersproject/providers':
+    specifier: ^5.7.2
+    version: 5.7.2
   '@usedapp/core':
     specifier: ^1.2.13
     version: 1.2.13(ethers@5.7.2)(react@18.2.0)(supports-color@9.4.0)
@@ -1986,7 +1992,7 @@ packages:
   /@ethersproject/contracts@5.4.0:
     resolution: {integrity: sha512-hkO3L3IhS1Z3ZtHtaAG/T87nQ7KiPV+/qnvutag35I0IkiQ8G3ZpCQ9NNOpSCzn4pWSW4CfzmtE02FcqnLI+hw==}
     dependencies:
-      '@ethersproject/abi': 5.4.0
+      '@ethersproject/abi': 5.7.0
       '@ethersproject/abstract-provider': 5.4.0
       '@ethersproject/abstract-signer': 5.4.0
       '@ethersproject/address': 5.4.0
