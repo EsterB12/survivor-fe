@@ -34,7 +34,10 @@ export const useTransactionNotifications = (state: TransactionStatus) => {
       toast.update(transactionIdRef.current, {
         isLoading: false,
         type: 'error',
-        render: state.errorCode === 4001 ? 'Transaction Denied' : 'Transaction Failed',
+        render:
+          state.errorCode === 4001
+            ? 'Transaction Denied'
+            : 'Transaction Failed',
         autoClose: 2000,
       });
     }
@@ -57,9 +60,11 @@ export const useTransactionNotifications = (state: TransactionStatus) => {
             <div>Transaction Successful</div>{' '}
             {state?.transaction?.hash && (
               <a
-                href={CHAIN.getExplorerTransactionLink(state?.transaction?.hash)}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={CHAIN.getExplorerTransactionLink(
+                  state?.transaction?.hash,
+                )}
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Check tx on {CHAIN.chainName}
               </a>

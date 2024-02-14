@@ -37,8 +37,8 @@ export const useWinnerScore = () => {
 };
 
 export const useHasGuessed = () => {
-  const {account} = useEthers()
-  const {value, error} = 
+  const { account } = useEthers();
+  const { value, error } =
     useCall({
       contract: contract.Survivor,
       method: 'guessed',
@@ -52,9 +52,6 @@ export const useHasGuessed = () => {
   }
   return undefined;
 };
-
-
-
 
 export const useContractPlayGame = () => {
   const { state, send } = useContractFunction(contract.Survivor, 'playGame', {
